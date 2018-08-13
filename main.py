@@ -1,4 +1,6 @@
-#!python -W ignore
+#!/usr/bin/env python
+import warnings
+warnings.simplefilter("ignore")
 from keras import Model
 from keras.layers import Dense
 
