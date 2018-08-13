@@ -34,7 +34,12 @@ def main():
     model.compile(optimizer='Adam', loss=auto.loss, metrics=['accuracy'])
 
     # Train model
-    model.fit(X, y, epochs=4, validation_split=.2)
+    model.fit(X, y, epochs=15, validation_split=.2)
+
+    # serialize model to JSON
+    # model_json = model.to_json()
+    # with open("model.json", "w") as json_file:
+    #     json_file.write(model_json)
 
 
 if __name__ == '__main__':
